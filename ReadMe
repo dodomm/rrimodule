@@ -1,0 +1,14 @@
+This file describes  what additions/changes will be made after the patch is applied
+
+1.Two files: rri-module.cc and rri-module.h are created in the folder:
+	.../ns-allinone-3.27/ns-3.27/src/wifi/model/   directory
+	
+	The RriModule class makes the appropriate radio measurement details for any device like SNR, load on AP and stores the details in separate datastructures.
+	
+2. Example simulation script twoRadioSnrAssn will be created in the folder 
+	.../ns-allinone-3.27/ns-3.27/scratch
+
+	This script has the  network scenario for deploying the wifinodes and the logic to associate with the best AP based on the snr.
+
+3. Run the script as follows:
+	./waf --run scratch/twoRadioSnrAssn
